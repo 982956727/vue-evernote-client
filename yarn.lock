@@ -1932,6 +1932,11 @@ vite@1.0.0-rc.3:
     vue "^3.0.0-rc.1"
     ws "^7.2.3"
 
+vue-router@4.0.0-beta.3:
+  version "4.0.0-beta.3"
+  resolved "https://registry.npmmirror.com/vue-router/-/vue-router-4.0.0-beta.3.tgz#e46f45807023a4b8ce73a143a216b4c9ea3eb243"
+  integrity sha512-3/cg3n46D9MO9u2nvtGE38gMyUxg8sjt6jMeZ6zbi9sRGAL0PaDHuKS+xWlOOLit7abP5MepNlh84t41gxtP8Q==
+
 vue@^3.0.0-rc.1:
   version "3.3.7"
   resolved "https://registry.npmmirror.com/vue/-/vue-3.3.7.tgz#972a218682443a3819d121261b2bff914417f4f0"
