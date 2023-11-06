@@ -3,7 +3,6 @@
 </template>
 
 <style lang="scss" scoped>
-  span {
     $h: 22px;
     $h2: $h - 4px;
     button {
@@ -23,5 +22,4 @@
       background: white;
       border-radius: $h2 / 2;
     }
-  }
 </style>
