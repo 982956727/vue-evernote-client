@@ -78,7 +78,6 @@
           background: darken(white, 5%);
         }
     }
-    &.gulu-theme-button {
       &.gulu-size-big {
         font-size: 24px;
         height: 48px;
@@ -90,5 +89,4 @@
         padding: 0 4px;
       }
     }
-  }
 </style>
