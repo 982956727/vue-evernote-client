@@ -1,5 +1,6 @@
 <template>
     <button class="gulu-button" :class="classes" :disabled="disabled">
+      <span v-if="loading" class="gulu-loadingIndicator"></span>
       <slot />
     </button>
 </template>
@@ -22,6 +23,10 @@
       disabled: {
         type: Boolean,
         default: false
+      },
+      loading: {
+        type: Boolean,
+        default: false
       }
     },
     setup(props) {
@@ -42,8 +47,10 @@
   $border-color: #d9d9d9;
   $color: #333;
   $blue: #40a9ff;
+  $green: green;
   $radius: 4px;
   $red: red;
+  $yellow: #fbbc05;
   $grey: grey;
   .gulu-button {
     box-sizing: border-box;
@@ -77,9 +84,9 @@
     &.gulu-theme-link{
         border-color: transparent;
         box-shadow: none;
-        color: $blue;
+        color: $green;
         &:hover,&:focus{
-          color: lighten($blue, 10%);
+          color: lighten($green, 10%);
         }
   }
   &.gulu-theme-text{
@@ -102,48 +109,48 @@
       }
       &.gulu-theme-button {
           &.gulu-level-main {
-            background: $blue;
+            background: $green;
             color: white;
-            border-color: $blue;
+            border-color: $green;
             &:hover,
             &:focus {
-              background: darken($blue,10%);
-              border-color: darken($blue,10%);
+              background: darken($green,10%);
+              border-color: darken($green,10%);
             }
           }
           &.gulu-level-danger {
-            background: $red;
-            border-color: $red;
+            background: $yellow;
+            border-color: $yellow;
             color: white;
             &:hover,
             &:focus {
-              background: darken($red,10%);
-              border-color: darken($red,10%);
+              background: darken($yellow,10%);
+              border-color: darken($yellow,10%);
             }
           }
       }
       &.gulu-theme-link {
         &.gulu-level-danger {
-          color: $red;
+          color: $yellow;
           &:hover,
           &:focus {
-            color: darken($red,10%);
+            color: darken($yellow,10%);
           }
         }
       }
       &.gulu-theme-text {
         &.gulu-level-main {
-          color: $blue;
+          color: $green;
           &:hover,
           &:focus {
-            color: darken($blue,10%);
+            color: darken($green,10%);
           }
         }
         &.gulu-level-danger {
-          color: $red;
+          color: $yellow;
           &:hover,
           &:focus {
-            color: darken($red,10%);
+            color: darken($yellow,10%);
           }
         }
       }
@@ -162,5 +169,20 @@
           color: $grey;
         }
       }
+      > .gulu-loadingIndicator {
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        margin-right: 4px;
+        border-radius: 8px;
+        border-color: $green $green $green transparent;
+        border-style: solid;
+        border-width: 2px;
+        animation: gulu-spin 1s infinite linear;
+      }
+    }
+    @keyframes gulu-spin {
+      0%{transform: rotate(0deg)}
+      100%{transform: rotate(360deg)}
     }
 </style>
