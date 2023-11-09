@@ -50,7 +50,7 @@
       border-bottom: 1px solid $border-color;
       display: flex;
       align-items: center;
-      jusify-content: space-between;
+      justify-content: space-between;
       font-size: 20px;
     }
     > main {
