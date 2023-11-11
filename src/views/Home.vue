@@ -3,8 +3,8 @@
     <div class="topnavAndBanner">
       <Topnav />
       <div class="banner">
-        <h1>轱辘UI</h1>
-        <h2>一个厉害的 UI 框架</h2>
+        <h1>GuLu UI</h1>
+        <h2>一个惹人喜爱的 UI 框架</h2>
         <p class="actions">
           <a href="https://github.com">GitHub</a>
           <router-link to="/doc">开始</router-link>
@@ -18,7 +18,7 @@
             <use xlink:href="#icon-vue"></use>
           </svg>
           <h3>基于 Vue 3</h3>
-          <p>骄傲地使用了 Vue 3 Composition API</p>
+          <p>谦虚地使用了 Vue 3 Composition API</p>
         </li>
         <li>
           <svg class="icon">
